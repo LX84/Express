@@ -6,13 +6,13 @@ router.get('/84', function(req, res, next) {
     res.send("hello lx!");
 });
 
-router.all('/lx',function(req,res,next){
+router.get('/lx',function(req,res,next){
     console.log("Accessing the lx section");
-    var j={
+    var lx={
         name:"lx",
         age:16
     }
-    res.json(j);
+    res.json(lx);
 });
 
 router.get('/zx',function(req,res,next){
